@@ -16,7 +16,16 @@
 
     <meta name="robots" content="index, follow" />
 
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      rel="canonical"
+      href="https://techglowsolutionsindia.github.io/woodora-living/sitemap.html"
+    />
+
+    <link
+      rel="icon"
+      href="./assets/images/woodora-logo.webp"
+      type="image/webp"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -43,7 +52,14 @@
           </div>
         </a>
 
-        <nav class="navbar">
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
           <ul class="navbar-list">
             <li><a href="index.html#home" class="navbar-link">Home</a></li>
 
@@ -72,6 +88,12 @@
             </li>
           </ul>
         </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
     </header>
 
@@ -93,7 +115,7 @@
 
                 <a href="./index.html#collection"> Collections </a>
 
-                <a href="./index.html#project"> Projects </a>
+                <a href="./index.html#gallery"> Projects </a>
 
                 <a href="./blog.html"> Blog </a>
 
@@ -103,13 +125,17 @@
               <div class="sitemap-group">
                 <h3>Furniture Collections</h3>
 
-                <a href="./index.html#collection"> Living Room </a>
+                <a href="./living-room.html"> Living Room </a>
 
-                <a href="./index.html#collection"> Bedroom Furniture </a>
+                <a href="./bedroom-furniture.html"> Bedroom Furniture </a>
 
-                <a href="./index.html#collection"> Dining Room </a>
+                <a href="./dining-sets.html"> Dining Room </a>
 
-                <a href="./index.html#collection"> Office Furniture </a>
+                <a href="./office-furniture.html"> Office Furniture </a>
+
+                <a href="./tv-units-consoles.html"> TV Units & Consoles </a>
+
+                <a href="./wardrobes-storage.html"> Wardrobes & Storage </a>
               </div>
 
               <div class="sitemap-group">
@@ -159,53 +185,126 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ==================================================
+     FOOTER SECTION STARTED
+================================================== -->
     <footer class="footer">
       <div class="container">
         <div class="section footer-top">
           <div class="footer-brand">
-            <a href="index.html#home" class="logo"> Woodora Living </a>
+            <!-- Footer Brand Logo -->
+            <a href="index.html#home" class="logo">
+              <img
+                src="./assets/images/woodora-logo.webp"
+                alt="Woodora Living Logo"
+              />
 
+              <div class="logo-text">
+                <span class="logo-main">WOODORA</span>
+                <span class="logo-sub">LIVING</span>
+              </div>
+            </a>
             <p class="footer-text">
               Woodora Living creates premium furniture for homes, offices, and
-              modern interiors.
+              modern interiors. From elegant sofas to durable dining sets, we
+              help you design spaces filled with comfort and style.
             </p>
           </div>
 
           <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Explore Us</p>
-            </li>
-
+            <li><p class="footer-list-title">Explore Us</p></li>
             <li><a href="index.html#about" class="footer-link">About</a></li>
-
-            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li>
+              <a href="index.html#collection" class="footer-link"
+                >Collections</a
+              >
+            </li>
+            <li>
+              <a href="index.html#gallery" class="footer-link">Real Spaces</a>
+            </li>
+            <li>
+              <a href="./admin-login.html" class="footer-link">Owner Login</a>
+            </li>
           </ul>
 
           <ul class="footer-list">
+            <li><p class="footer-list-title">Collections</p></li>
+
             <li>
-              <p class="footer-list-title">Collections</p>
+              <a href="living-room.html" class="footer-link"> Living Room </a>
             </li>
 
             <li>
-              <a href="living-room.html" class="footer-link">Living Room</a>
+              <a href="bedroom-furniture.html" class="footer-link"> Bedroom </a>
             </li>
 
             <li>
-              <a href="bedroom-furniture.html" class="footer-link">Bedroom</a>
+              <a href="dining-sets.html" class="footer-link"> Dining Room </a>
             </li>
 
             <li>
-              <a href="dining-sets.html" class="footer-link">Dining Room</a>
+              <a href="office-furniture.html" class="footer-link">
+                Office Furniture
+              </a>
             </li>
           </ul>
 
           <div class="footer-list">
             <p class="footer-list-title">Visit Showroom</p>
-
             <p class="footer-text">
-              We'd love to help you design your perfect space.
+              Have a question or want to explore our furniture in person? We’d
+              love to help you design your perfect space.
             </p>
+            <!-- <a href="#contact" class="btn"
+              ><span class="span">Contact Us</span
+              ><ion-icon name="arrow-forward" aria-hidden="true"></ion-icon
+            ></a> -->
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://twitter.com"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -223,12 +322,77 @@
 
             <span>•</span>
 
-            <a href="./sitemap.html"> Sitemap </a>
+            <a
+              href="./sitemap.html"
+              aria-current="page"
+              style="pointer-events: none; cursor: default"
+            >
+              Sitemap
+            </a>
           </div>
         </div>
       </div>
     </footer>
+    <!-- ==================================================
+     FOOTER SECTION ENDED
+================================================== -->
 
     <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script nomodule src="https://unpkg.com/ionicons/ionicons.js"></script>
+
+    <!-- Woodora Living Floating Chatbot Started -->
+    <button
+      class="chatbot-toggle"
+      id="chatbotToggle"
+      type="button"
+      aria-label="Open customer support chat"
+    >
+      💬
+    </button>
+
+    <div class="chatbot-box" id="chatbotBox">
+      <div class="chatbot-header">
+        <h3>Kumar from Woodora</h3>
+
+        <button
+          class="chatbot-close"
+          id="chatbotClose"
+          type="button"
+          aria-label="Close customer support chat"
+        >
+          ×
+        </button>
+      </div>
+
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="bot-message">
+          Hello 👋 This is Kumar from Woodora. How can I help you with your
+          furniture requirement?
+        </div>
+      </div>
+
+      <div class="chatbot-input-area">
+        <input
+          type="text"
+          id="chatbotInput"
+          placeholder="Type your question..."
+        />
+
+        <button id="chatbotSend">Send</button>
+      </div>
+    </div>
+    <!-- Woodora Living Floating Chatbot Ended -->
+
+    <!-- Chatbot Stylesheet Started -->
+    <link rel="stylesheet" href="./assets/css/chatbot.css" />
+
+    <!-- Chatbot JavaScript Started -->
+    <script src="./assets/js/chatbot.js"></script>
   </body>
 </html>

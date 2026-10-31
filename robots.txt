@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://woodora-living.netlify.app/sitemap.xml
+Sitemap: https://techglowsolutionsindia.github.io/woodora-living/sitemap.xml

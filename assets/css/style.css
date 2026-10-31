@@ -1733,10 +1733,20 @@ body {
   border-block-end: 1px solid var(--french-bistre);
 }
 
+/* Footer Brand Logo Started */
 .footer .logo {
-  color: var(--french-bistre);
+  color: var(--white);
   font-size: 3.2rem;
 }
+
+.footer .logo-main {
+  color: var(--white);
+}
+
+.footer .logo-sub {
+  color: var(--camel);
+}
+/* Footer Brand Logo Ended */
 
 .footer-brand .footer-text {
   margin-block: 10px;
