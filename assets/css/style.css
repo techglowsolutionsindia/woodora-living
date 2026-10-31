@@ -313,7 +313,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 8px;
   text-decoration: none;
 
   color: var(--bistre);
@@ -344,13 +344,11 @@ body {
 }
 
 .logo-sub {
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   letter-spacing: 5px;
-  /* darker than previous */
   color: hsl(33, 28%, 42%);
-
   margin-top: 4px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .section {
@@ -1734,17 +1732,18 @@ body {
 }
 
 /* Footer Brand Logo Started */
-.footer .logo {
+.footer .footer-brand .logo {
   color: var(--white);
   font-size: 3.2rem;
+  gap: 18px;
 }
 
-.footer .logo-main {
-  color: var(--white);
+.footer .footer-brand .logo .logo-main {
+  color: #ffffff;
 }
 
-.footer .logo-sub {
-  color: var(--camel);
+.footer .footer-brand .logo .logo-sub {
+  color: #ffd8ad;
 }
 /* Footer Brand Logo Ended */
 
@@ -1763,7 +1762,7 @@ body {
 }
 
 .footer-list-title {
-  color: var(--french-bistre);
+  color: #f3bb7f;
   font-family: var(--ff-rosario);
   font-size: 1.8rem;
   font-weight: var(--fw-700);
